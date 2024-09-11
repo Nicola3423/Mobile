@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import { FlatList, Text, Box } from 'native-base'; // Importa componentes do Native Base para estruturar a UI
 
 // Define a interface para as props do componente
@@ -15,13 +15,14 @@ const ListaTarefas: React.FC<ListaTarefasProps> = ({ tarefas }) => {
       // 'renderItem' define como cada item da lista será renderizado
       renderItem={({ item }) => (
         <Box
-          bg="gray.200" // Define a cor de fundo do box (um cinza claro)
+          bg="#1A5276" // Define a cor de fundo do box (azul escuro)
           p={4} // Define o padding interno do box (distância do conteúdo para as bordas)
           alignItems="flex-start" // Alinha o texto à esquerda dentro do box
           my={2} // Margem vertical (espaço entre itens)
           mx={2} // Margem horizontal (espaço lateral entre itens)
+          borderRadius={8} // Bordas arredondadas para os itens da lista
         >
-          <Text>{item}</Text> {/* O texto exibido será o conteúdo da tarefa (item) */}
+          <Text color="white" fontSize="md">{item}</Text> {/* O texto exibido será o conteúdo da tarefa (item) */}
         </Box>
       )}
       

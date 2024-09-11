@@ -23,9 +23,9 @@ const AdicionarTarefa: React.FC<AdicionarTarefaProps> = ({ onAdicionarTarefa }) 
   };
 
   return (
-    <View style={{ backgroundColor: '#402291', paddingVertical: 20, paddingHorizontal: 20, paddingTop: 50 }}>
+    <View style={{ backgroundColor: '#1A5276', paddingVertical: 20, paddingHorizontal: 20, paddingTop: 50 }}>
       {/* Título da lista de tarefas */}
-      <Text fontSize="xl" color="white" mb={4}>Lista de Tarefas Hete Caetano</Text>
+      <Text fontSize="xl" color="white" mb={4}>Lista de Tarefas Nicola</Text>
 
       {/* Contêiner para o campo de entrada de texto e o botão */}
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -33,7 +33,7 @@ const AdicionarTarefa: React.FC<AdicionarTarefaProps> = ({ onAdicionarTarefa }) 
           {/* Campo de entrada de texto onde o usuário digita a tarefa */}
           <Input
             placeholder="Digite uma tarefa" // Texto que aparece no campo quando ele está vazio
-            placeholderTextColor="white" // Cor do placeholder
+            placeholderTextColor="#BFC9CA" // Cor do placeholder
             value={tarefa} // O valor do campo de texto é ligado ao estado 'tarefa'
             onChangeText={(texto) => setTarefa(texto)} // Atualiza o estado 'tarefa' conforme o usuário digita
             fontSize={14} // Tamanho da fonte do texto
@@ -43,10 +43,10 @@ const AdicionarTarefa: React.FC<AdicionarTarefaProps> = ({ onAdicionarTarefa }) 
 
         {/* Botão com ícone para adicionar a tarefa */}
         <IconButton
-          icon={<Ionicons name="add" size={24} color="#402291" />} // Ícone de adição
+          icon={<Ionicons name="add" size={24} color="#1A5276" />} // Ícone de adição
           colorScheme="light" // Define o esquema de cores
           onPress={adicionarTarefa} // Chama a função 'adicionarTarefa' ao pressionar o botão
-          style={{ borderRadius: 50, backgroundColor: 'gold' }} // Estilo para o botão, incluindo a cor de fundo e bordas arredondadas
+          style={{ borderRadius: 50, backgroundColor: '#F7DC6F' }} // Estilo para o botão, incluindo a cor de fundo e bordas arredondadas
         />
       </View>
     </View>
